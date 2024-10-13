@@ -1,5 +1,5 @@
 #!/bin/bash
-
+pip install mysqlclient pydynamodb sasl thrift_sasl sqlalchemy sqlalchemy-orm
 # create Admin user, you can read these values from env or anywhere else possible
 superset fab create-admin --username "$ADMIN_USERNAME" --firstname Superset --lastname Admin --email "$ADMIN_EMAIL" --password "$ADMIN_PASSWORD"
 
